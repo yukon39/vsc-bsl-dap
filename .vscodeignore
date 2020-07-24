@@ -1,0 +1,8 @@
+.vscode/**
+src/**
+**
+!lib/**
+!node_modules/**
+!out/**
+!LICENSE
+!README.md

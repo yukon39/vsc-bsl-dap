@@ -1,0 +1,83 @@
+{
+  "name": "vsc-bsl-dap",
+  "displayName": "BSL Debug",
+  "description": "Debugging for 1C:Enterprise 8",
+  "publisher": "yukon39",
+  "version": "1.0.0",
+  "author": {
+    "name": "Y.Goncharuk <yukon39@gmail.com>"
+  },
+  "categories": [
+    "Debuggers"
+  ],
+  "homepage": "https://github.com/yukon39/vsc-bsl-dap/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/yukon39/vsc-bsl-dap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yukon39/vsc-bsl-dap.git"
+  },
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "main": "./out/extension",
+  "activationEvents": [
+    "onLanguage:bsl",
+    "onDebug",
+    "onDebugInitialConfigurations",
+    "onDebugAdapterProtocolTracker:bsl",
+    "onDebugResolve:bsl"
+  ],
+  "contributes": {
+    "breakpoints": [
+      {
+        "language": "bsl"
+      }
+    ],
+    "debuggers": [
+      {
+        "type": "bsldbgs",
+        "label": "BSL Debugger",
+        "initialConfigurations": [
+          {
+            "name": "Debug 1C:Enterprise",
+            "type": "bsldbgs",
+            "request": "attach",
+            "debuggerURL": "http://localhost:1550",
+            "infobaseAlias": "DefAlias"
+          }
+        ],
+        "configurationAttributes": {
+          "attach": {
+            "required": [
+              "debuggerURL",
+              "infobaseAlias"
+            ],
+            "properties": {
+              "debuggerURL": {
+                "type": "string",
+                "description": "URL of remote debug server (dbgs)",
+                "default": "http://localhost:1550"
+              },
+              "infobaseAlias": {
+                "type": "string",
+                "description": "Infobase debug alias",
+                "default": "DefAlias"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "vscode-debugadapter": "^1.41.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.47.0",
+    "@types/node": "^14.0.23",
+    "typescript": "^3.9.6",
+    "vsce": "^1.77.0"
+  }
+}
