@@ -22,6 +22,12 @@
     "vscode": "^1.47.0"
   },
   "main": "./out/extension",
+  "scripts": {
+    "compile": "tsc -p ./src",
+    "watch": "tsc -watch -p ./src",
+    "package": "vsce package"
+  },
+
   "activationEvents": [
     "onLanguage:bsl",
     "onDebug",
