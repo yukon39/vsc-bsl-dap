@@ -1,0 +1,11 @@
+{
+    "debugger.label": "BSL Debugger",
+    "debugger.attach.snippet.label": "BSL: Attach to process",
+    "debugger.attach.snippet.description": "Attach to remote debug server",
+    "configuration.initialConfiguration.name": "Debug 1C:Enterprise",
+    "configuration.attach.debuggerURL.description": "URL of remote debug server (dbgs). Default: \"http://localhost:1550\"",
+    "configuration.attach.infobaseAlias.description": "Infobase debug alias. Default: \"DefAlias\"",
+    "configuration.attach.cwd.description": "Working directory. Default: Current workspace root",
+    "configuration.attach.sources.path.description": "Path to configuration sources. Default: \"src/cf\"",
+    "configuration.attach.sources.extension.description": "Path to extension sources."
+}

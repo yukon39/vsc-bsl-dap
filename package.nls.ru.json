@@ -1,0 +1,11 @@
+{
+    "debugger.label": "Отладчик BSL",
+    "debugger.attach.snippet.label": "BSL: Подключится к отладке",
+    "debugger.attach.snippet.description": "Подключиться к удаленному серверу отладки",
+    "configuration.initialConfiguration.name": "Отладка 1С:Предприятие",
+    "configuration.attach.debuggerURL.description": "Адрес удаленного сервера отладки (dbgs). По умолчанию: \"http://localhost:1550\"",
+    "configuration.attach.infobaseAlias.description": "Имя информационной базы на сервере отладки. По умолчанию: \"DefAlias\"",
+    "configuration.attach.cwd.description": "Рабочий каталог. По умолчанию: корневая папка текущей рабочей области",
+    "configuration.attach.sources.path.description": "Путь к исходникам конфигурации. По умолчанию: \"src/cf\"",
+    "configuration.attach.sources.extension.description": "Путь к исходникам расширения конфигурации."
+}
