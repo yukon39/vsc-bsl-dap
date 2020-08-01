@@ -4,6 +4,8 @@ This extension for Visual Studio Code implements debugging protocol for [1C:Ente
 
 Inspired by [BSL Language Server](https://github.com/1c-syntax/bsl-language-server)
 
+Based on [BSL Debug Server](https://github.com/yukon39/bsl-debug-server) implementation of the Debug Adapter Protocol
+
 ## Features
 
 * Supports both Enterprise Development Tools and Designer projects.
