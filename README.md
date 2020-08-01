@@ -1,4 +1,4 @@
-# 1С:Enterprise Platform debug extension for Visual Studio Code
+# 1С:Enterprise Platform debug extension for VS Code
 
 This extension for Visual Studio Code implements debugging protocol for [1C:Enterprise Platform](https://1c-dn.com/) framework.
 
