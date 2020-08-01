@@ -17,6 +17,7 @@ export class BSLDebugAdapterDescriptorFactory implements DebugAdapterDescriptorF
 
             let command = "java.exe"
             const args: string[] = [];
+            args.push("-Dfile.encoding=UTF-8");
             args.push("-jar", jarpath);
             args.push("--dap")
 
