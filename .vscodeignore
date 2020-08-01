@@ -6,3 +6,5 @@ src/**
 !out/**
 !LICENSE
 !README.md
+!package.nls.json
+!package.nls.ru.json
