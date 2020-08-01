@@ -3,7 +3,7 @@
   "displayName": "BSL Debug",
   "description": "Debugging for 1C:Enterprise 8",
   "publisher": "yukon39",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Y.Goncharuk <yukon39@gmail.com>"
   },
@@ -115,9 +115,9 @@
     "vscode-debugadapter": "^1.41.1"
   },
   "devDependencies": {
+    "@types/node": "^14.0.27",
     "@types/vscode": "^1.47.0",
-    "@types/node": "^14.0.23",
-    "typescript": "^3.9.6",
+    "typescript": "^3.9.7",
     "vsce": "^1.77.0"
   }
 }
